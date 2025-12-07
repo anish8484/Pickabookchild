@@ -1,0 +1,144 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "tone": "Playful, Magical, Trustworthy, Simple",
+    "core_philosophy": "Fusion over Imitation. Emotion First. Content is King."
+  },
+  "theme": {
+    "mode": "light",
+    "archetype": "Pastel & Soft (Archetype 3) with Electric Accents",
+    "vibe": "A digital playground. Soft, tactile, and full of wonder."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Fredoka, Nunito, sans-serif",
+      "weight": "700",
+      "style": "Rounded, Friendly",
+      "usage": "Main titles, Section headers"
+    },
+    "body": {
+      "font_family": "Quicksand, Outfit, sans-serif",
+      "weight": "400",
+      "style": "Clean, Legible",
+      "usage": "Paragraphs, UI labels"
+    },
+    "rules": [
+      "Headings must be expressive and large (text-4xl+).",
+      "Use tight letter spacing (tracking-tight) for large headings.",
+      "Use loose line height (leading-relaxed) for body text.",
+      "Avoid 'Inter' for headings. Use rounded fonts to match the playful theme."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#FDFBF7",
+      "foreground": "#1E1B4B",
+      "primary": "#8B5CF6",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F3E8FF",
+      "secondary_foreground": "#6B21A8",
+      "accent": "#FCD34D",
+      "accent_foreground": "#78350F",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+      "card": "#FFFFFF",
+      "card_foreground": "#1E1B4B",
+      "border": "#E2E8F0",
+      "input": "#F1F5F9",
+      "ring": "#8B5CF6"
+    },
+    "gradients": {
+      "magic_button": "bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600",
+      "hero_bg": "bg-gradient-to-b from-violet-50 via-white to-white"
+    },
+    "rules": [
+      "No generic full-screen gradients. Use texture (noise, grain) > gloss.",
+      "Use 'Deep Indigo' (#1E1B4B) for text instead of pure black.",
+      "Use 'Sunshine Yellow' (#FCD34D) for sparks and highlights."
+    ]
+  },
+  "layout": {
+    "spacing": {
+      "scale": ["p-1", "p-2", "p-4", "p-6", "p-8", "p-12", "p-16", "p-20", "p-24", "p-32"],
+      "philosophy": "Generous spacing. Use 2-3x more spacing than typical designs."
+    },
+    "grid_system": {
+      "gallery": "Bento Grid (Mode A: The Tetris Grid). Mix hero, square, and tall items.",
+      "dashboard": "Control Room Grid (Mode B). Dense, data-correlated."
+    },
+    "container": {
+      "max_width": "max-w-7xl",
+      "padding": "px-4 md:px-8"
+    },
+    "rules": [
+      "Mobile-First: Always start with grid-cols-1.",
+      "Optical Alignment: Center-align headings only if it improves hierarchy.",
+      "Negative Space: Value empty areas; they give breathing room."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped (rounded-full), gradient background, shimmer effect.",
+      "interaction": "Scale up slightly on hover (scale-105), active press down (scale-95)."
+    },
+    "cards": {
+      "style": "Soft rounded corners (rounded-2xl), subtle shadow (shadow-sm), white background.",
+      "interaction": "Tilt effect on hover, shadow deepens (shadow-md)."
+    },
+    "inputs": {
+      "style": "Large touch targets, soft borders, pastel background on focus.",
+      "interaction": "Ring focus with brand color."
+    },
+    "upload_zone": {
+      "style": "Dashed border (border-dashed border-2), animated background pattern on hover.",
+      "interaction": "Bounce animation on drag over."
+    }
+  },
+  "visual_enhancers": {
+    "textures": [
+      "Grain/Noise overlay (opacity-50) to kill digital flatness.",
+      "Magical sparkles (SVG/Lottie) for success states."
+    ],
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "micro_interactions": "Hover lifts, button presses, loading spinners.",
+      "libraries": ["framer-motion", "lenis"]
+    },
+    "3d_elements": {
+      "usage": "Subtle particle effects (TSParticles) or soft 3D blobs for 'processing' state.",
+      "library": "react-tsparticles"
+    }
+  },
+  "assets": {
+    "images": {
+      "child_portrait": "https://images.unsplash.com/photo-1693378782221-5806262d3ad2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxjdXRlJTIwY2hpbGQlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzY1MDMyMTY3fDA&ixlib=rb-4.1.0&q=85",
+      "illustration_template": "https://images.unsplash.com/photo-1743964451742-0eff385d5d0d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx3aGltc2ljYWwlMjBjaGlsZHJlbiUyMGJvb2slMjBpbGx1c3RyYXRpb24lMjBjaGFyYWN0ZXJ8ZW58MHx8fHwxNzY1MDMyMTY5fDA&ixlib=rb-4.1.0&q=85",
+      "magic_texture": "https://images.unsplash.com/photo-1631636507718-f8efdca99602?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxtYWdpY2FsJTIwc3BhcmtsZXMlMjBkdXN0JTIwdGV4dHVyZXxlbnwwfHx8fDE3NjUwMzIxNzB8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Rounded, soft stroke (stroke-width-2)"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text meets APCA standards (4.5:1 for normal text).",
+    "motion": "Respect prefers-reduced-motion.",
+    "aria": "Use aria-hidden='true' for decorative elements."
+  },
+  "instructions_to_main_agent": [
+    "Use the provided image URLs for placeholders.",
+    "Implement the 'Magic Transform' pattern: One-tap transformation with visual before/after.",
+    "Use 'sonner' for toast notifications.",
+    "Do NOT use 'Inter' font. Import 'Fredoka' and 'Quicksand' from Google Fonts.",
+    "Create a 'design_system' folder in components to house reusable UI elements.",
+    "Ensure the upload interface feels like a 'magic portal' or 'frame'.",
+    "Use the 'Bento Grid' layout for the gallery page."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays separate good from extraordinary."
+  ]
+}
