@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+    :root {
+        --background: 44 5% 99%;
+        --foreground: 249 47% 20%;
+        --card: 0 0% 100%;
+        --card-foreground: 249 47% 20%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 249 47% 20%;
+        --primary: 258 90% 66%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 270 100% 97%;
+        --secondary-foreground: 271 76% 53%;
+        --accent: 45 97% 64%;
+        --accent-foreground: 30 96% 26%;
+        --muted: 210 40% 96%;
+        --muted-foreground: 215 16% 47%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 214 32% 91%;
+        --input: 210 40% 96%;
+        --ring: 258 90% 66%;
+        --radius: 1rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fredoka', 'Nunito', sans-serif;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
